@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% block content %}
+<body>
+  <table>
+  {% for w in word %}
+    <tr>
+      <th>{{w}}</th>
+    </tr>
+  {% endfor %}
+  </table>
+</body>
+{% endblock %}
+
+</html>
