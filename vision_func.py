@@ -14,8 +14,8 @@ import time
 def get_word():
     IMAGES_DIR = 'static/image'
 
-    key = '92193271707a4c95ab9e85803451bbac'
-    endpoint = 'https://msdocscomputervision-ikedashinnosuke.cognitiveservices.azure.com/'
+    key = '******'
+    endpoint = '***********'
     # region = 'Japan East'
 
     computervision_client = ComputerVisionClient(

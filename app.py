@@ -18,9 +18,10 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 @app.route('/', methods=['GET', 'POST'])
 def index():
     load_dotenv()
-    connect_str = 'DefaultEndpointsProtocol=https;AccountName=shinnosukeikeda;AccountKey=U5KT6or+AwmCDC2P7uhyAtsNTrK0A/ihxxSeoopOJ5HbYd4X1NTWH3pg95+gn7nP/XkkI48T23oD+AStJoaP5w==;EndpointSuffix=core.windows.net'
+    connect_str = '*****'
 
     container_name = 'artists'
+    # .envがロードされる前に読み込まれる？
     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
     if request.method == 'POST':
